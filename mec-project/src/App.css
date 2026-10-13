@@ -1,0 +1,320 @@
+/* -------------------------
+   General
+------------------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button,
+input,
+select {
+  font-family: inherit;
+}
+
+.app {
+  min-height: 100vh;
+  background: #f4f7fb;
+  color: #1f2937;
+  transition: 0.3s;
+}
+
+/* -------------------------
+   Dark Mode
+------------------------- */
+
+.app.dark {
+  background: #111827;
+  color: #f9fafb;
+}
+
+/* -------------------------
+   Header
+------------------------- */
+
+header {
+  background: #2563eb;
+  color: white;
+  padding: 22px 8%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+header p {
+  opacity: 0.9;
+}
+
+.theme-btn {
+  border: none;
+  padding: 12px 18px;
+  border-radius: 8px;
+
+  background: white;
+  color: #2563eb;
+
+  font-weight: bold;
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.theme-btn:hover {
+  transform: scale(1.05);
+}
+
+/* -------------------------
+   Main
+------------------------- */
+
+main {
+  width: 85%;
+  max-width: 1100px;
+  margin: 30px auto;
+}
+
+/* -------------------------
+   Profile
+------------------------- */
+
+.profile {
+  background: white;
+
+  padding: 25px;
+
+  border-radius: 15px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 20px;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+
+  margin-bottom: 25px;
+}
+
+.dark .profile {
+  background: #1f2937;
+}
+
+.avatar {
+  width: 70px;
+  height: 70px;
+
+  border-radius: 50%;
+
+  background: #2563eb;
+
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.profile h2 {
+  margin-bottom: 5px;
+}
+
+.profile p {
+  color: #6b7280;
+}
+
+.dark .profile p {
+  color: #d1d5db;
+}
+
+/* -------------------------
+   Statistics
+------------------------- */
+
+.stats {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 20px;
+
+  margin-bottom: 25px;
+}
+
+.stat-card {
+  background: white;
+
+  padding: 22px;
+
+  border-radius: 15px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 18px;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.dark .stat-card {
+  background: #1f2937;
+}
+
+.stat-icon {
+  font-size: 35px;
+}
+
+.stat-card h3 {
+  color: #6b7280;
+  font-size: 15px;
+}
+
+.dark .stat-card h3 {
+  color: #d1d5db;
+}
+
+.stat-card p {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.completed-stat p {
+  color: #16a34a;
+}
+
+.pending-stat p {
+  color: #f59e0b;
+}
+
+/* -------------------------
+   Add Task
+------------------------- */
+
+.add-task {
+  background: white;
+
+  padding: 25px;
+
+  border-radius: 15px;
+
+  margin-bottom: 25px;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.dark .add-task {
+  background: #1f2937;
+}
+
+.add-task h2 {
+  margin-bottom: 20px;
+}
+
+.form {
+  display: flex;
+  gap: 10px;
+}
+
+.form input {
+  flex: 1;
+
+  padding: 13px;
+
+  border: 1px solid #d1d5db;
+
+  border-radius: 8px;
+
+  outline: none;
+
+  font-size: 15px;
+}
+
+.form select {
+  padding: 13px;
+
+  border: 1px solid #d1d5db;
+
+  border-radius: 8px;
+
+  background: white;
+}
+
+.add-btn {
+  padding: 13px 20px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background: #2563eb;
+
+  color: white;
+
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+.add-btn:hover {
+  background: #1d4ed8;
+}
+
+/* -------------------------
+   Task Section
+------------------------- */
+
+.task-section {
+  background: white;
+
+  padding: 25px;
+
+  border-radius: 15px;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.dark .task-section {
+  background: #1f2937;
+}
+
+.task-heading {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-bottom: 20px;
+}
+
+.task-heading span {
+  background: #fff7ed;
+
+  color: #f97316;
+
+  padding: 7px 12px;
+
+  border-radius: 20px;
+
+  font-size: 13px;
+
+  font-weight: bold;
+}
+
+/* -------------------------
+   Task Card
+------------------…

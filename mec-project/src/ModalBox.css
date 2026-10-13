@@ -1,0 +1,18 @@
+ .model{
+   
+  
+   
+    paddin: 3px;
+    width: 50%;
+    margin-left: 200px;
+    border-color: black;
+    border-radius: 20px;
+    background-color:rgb(115, 218, 139);
+    box-sizing: 10px;
+}
+button{
+    border-color: black;
+    border-radius: 10px;
+    background-color:rgb(157, 192, 236);
+}
+
